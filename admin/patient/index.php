@@ -12,13 +12,21 @@ $query=mysqli_query($conn,$sql);
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Doctor_Dashboard</title>
+    <title>Patient Dashboard</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 </head>
 
 <body>
 
-<div class="container" style="padding-top: 8rem;">
+<div class="container" style="position: absolute;
+        top: 25%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+        padding: 50px;
+        max-width: 2000px;
+        max-height: 1500px;
+        padding-top: 8rem;">
     <div class="row">
         <div class="col-md-2">
             <div class="list-group">
@@ -32,6 +40,7 @@ $query=mysqli_query($conn,$sql);
             </div>
         </div>
         <div class="col-md-10">
+        <div class="card" style="padding: 10px;"> 
           <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12">
@@ -69,9 +78,12 @@ $query=mysqli_query($conn,$sql);
                 </div>
               </div>
           </div>
+
     </div>
 </div>
 </div>
+</div>
+
 
 
 </body>
