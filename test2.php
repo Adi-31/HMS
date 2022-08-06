@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+// new update made
 <html lang="en">
 <head>
   <title>Bootstrap Example</title>
