@@ -17,29 +17,37 @@ $query=mysqli_query($conn,$sql);
 </head>
 
 <body>
+<!-- 
+// a navbar that contains a button to go to the admin dashboard -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div style="padding: 10px;">
+        <a href="../index.php" class="btn btn-primary" >Back to Admin Dashboard</a>       
+        </div>
+</nav>
 
-<div class="container" style="position: absolute;
-        top: 25%;
-        left: 50%;
-        margin-right: -50%;
-        transform: translate(-50%, -50%);
-        padding: 50px;
-        max-width: 2000px;
-        max-height: 1500px;
-        padding-top: 8rem;">
+
+
+<div class="container" style="padding: 50px;
+    display: flex;
+    align-content: center;
+    justify-content: center;">
     <div class="row">
-        <div class="col-md-2">
+        <div class="col-md-2" style="    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: nowrap;">
             <div class="list-group">
-                <a href="patient_dashboard.php" class="list-group-item list-group-item-action active">Dashboard</a>
+                <a href="index.php" class="list-group-item list-group-item-action active">Dashboard</a>
                 <a href="insert_patient.php" class="list-group-item list-group-item-action">Add new Patient</a>
                 <a href="update_patient.php" class="list-group-item list-group-item-action">Edit Patient details</a>
                 <a href="delete_patient.php" class="list-group-item list-group-item-action">Remove Patient details</a>
-                <a href="doctor_appointments.php" class="list-group-item list-group-item-action">Appointments</a>
-                <a href="doctor_prescriptions.php" class="list-group-item list-group-item-action">Prescriptions</a>
-                <a href="doctor_logout.php" class="list-group-item list-group-item-action">Logout</a>
+                <a href="../../logout.php" class="list-group-item list-group-item-action">Logout</a>
             </div>
         </div>
-        <div class="col-md-10">
+        <div class="col-md-10" style="    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: nowrap;">
         <div class="card" style="padding: 10px;"> 
           <div class="container-fluid">
             <div class="row">

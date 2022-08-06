@@ -1,41 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-  <style>
-      .nav{
-            background-color: steelblue;
-            padding: 10px;
-            display:flex;
-            justify-content: space-between;
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+      <title>landingpg</title>
+</head>
+<body style="position: relative;
+width:100%;
 
-            transition-timing-function: ease-in ;
-            transition: all 0.5s;
-      }
-      <style>
-  /* Make the image fully responsive */
-  .carousel-inner img {
+">
+<div style="padding:25px;">
+<div style="position: relative;
+width: 100%;
+height: 75px;
+background: #0D6EFD;
+border-radius: 15px;">
+<style>
+    .p {
+    position: absolute;
+   
+    left: 20px;
+    bottom:20px;
+   
+
+    font-family: 'Airbnb Cereal App';
+    font-style: normal;
+    font-size: 40px;
+    line-height: 0px;
+
+    color: #FFFFFF;
+   
+}
+ .a {
+    position: absolute;
+width: 150px;
+height: 83px;
+left: 1200px;
+top: 73px;
+ }
+ .box {
+    box-sizing: border-box;
+    position: absolute;
+    width: 90px;
+    height: 50px;
+    top: 12px;
+    left: 1200px;
+    border: 1px ;
+    border-color: #FFFFFF;
+    border-radius: 15px;
+    font-family: 'Airbnb Cereal App';
+    font-style: normal;
+    font-size: 17px;
+    line-height: 0px;
+ }
+ .carousel-inner img {
     width: 100%;
     height: 100%;
   }
-  </style>
 </style>
-</head>
-<body>
+<div class="p col-8">
+    <p>HMS</p>
+</div>
+<div class="col-2">
+    <a href="login.php"> -->
+<button class="col-2 box"><h4>Login</h4></button></a>
 
-<div class="nav">
-      <h1 style="padding:8px;">HMS</h1>
-      <div style="padding:10px;">
-      <div style="padding: 10px;">
-            <a href="./login.php" class="btn btn-primary" >Login</a>        
-      </div>
 </div>
 </div>
-<div style="background-color: #cd8ad4;">
+</div>
+<div >
       <!-- Carousel -->
       <div id="demo" class="carousel slide" data-bs-ride="carousel">
 
@@ -51,13 +87,13 @@
     /* padding-bottom: 180px; */
     padding-top: 0px;">
       <div class="carousel-item active">
-      <img src="assets/slide-1.jpg" alt="Slide-1" class="d-block" style="width:100%">
+      <img src="./assets/slide-1.jpg" alt="Slide-1" class="d-block" style="width:100%">
       </div>
       <div class="carousel-item">
-      <img src="assets/slide-2.jpg" alt="Slide-2" class="d-block" style="width:100%">
+      <img src="./assets/slide-2.jpg" alt="Slide-2" class="d-block" style="width:100%">
       </div>
       <div class="carousel-item">
-      <img src="assets/slide-3.jpg" alt="Slide-3" class="d-block" style="width:100%">
+      <img src="./assets/slide-3.jpg" alt="Slide-3" class="d-block" style="width:100%">
       </div>
       </div>
 
@@ -71,9 +107,5 @@
       </div>
 </div>
 </div>
-
-
-
-
 </body>
 </html>

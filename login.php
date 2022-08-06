@@ -2,10 +2,10 @@
 
 session_start();
 
-// if(isset($_SESSION['uid']))
-// {
-//     header('location:logout.php');
-// }
+if(isset($_SESSION['uid']))
+{
+    header('location:admin/index.php');
+}
 ?>
 <html lang="en_US">
     <head>

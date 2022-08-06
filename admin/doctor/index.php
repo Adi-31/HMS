@@ -17,7 +17,11 @@ $query=mysqli_query($conn,$sql);
 </head>
 
 <body>
-
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div style="padding: 10px;">
+        <a href="../index.php" class="btn btn-primary" >Back to Admin Dashboard</a>       
+        </div>
+</nav>
 <div class="container" style="position: absolute;
         top: 25%;
         left: 50%;
@@ -33,9 +37,7 @@ $query=mysqli_query($conn,$sql);
                 <a href="insert_doctor.php" class="list-group-item list-group-item-action">Add new Doctor</a>
                 <a href="update_doctor.php" class="list-group-item list-group-item-action">Edit Doctor details</a>
                 <a href="delete_doctor.php" class="list-group-item list-group-item-action">Remove Doctor details</a>
-                <a href="doctor_appointments.php" class="list-group-item list-group-item-action">Appointments</a>
-                <a href="doctor_prescriptions.php" class="list-group-item list-group-item-action">Prescriptions</a>
-                <a href="doctor_logout.php" class="list-group-item list-group-item-action">Logout</a>
+                <a href="../../logout.php" class="list-group-item list-group-item-action">Logout</a>
             </div>
         </div>
         <div class="col-md-10">
