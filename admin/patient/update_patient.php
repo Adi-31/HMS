@@ -47,9 +47,9 @@ if(isset($_POST['update'])){
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div style="padding: 10px;">
+    <div style="padding: 10px;">
         <a href="../index.php" class="btn btn-primary" >Back to Admin Dashboard</a>       
-        </div>
+    </div>
 </nav>
 <div class="container" style="padding: 50px;
     display: flex;
@@ -57,25 +57,26 @@ if(isset($_POST['update'])){
     justify-content: center;">
     <div class="row">
         <div class="col-md-2" style="    display: flex;
-    align-content: center;
-    justify-content: center;
-    flex-wrap: nowrap;">
-                <div class="list-group">
-                    <a href="index.php" class="list-group-item list-group-item-action ">Dashboard</a>
-                    <a href="insert_patient.php" class="list-group-item list-group-item-action ">Add new Patient</a>
-                    <a href="update_patient.php" class="list-group-item list-group-item-action active">Edit Patient details</a>
-                    <a href="delete_patient.php" class="list-group-item list-group-item-action">Remove Patient details</a>
-                    <a href="../../logout.php" class="list-group-item list-group-item-action">Logout</a>
-                </div>
-            </div>
-            <div class="col-md-10" style=" padding: 10px;">
-            <div class="card">
+        align-content: center;
+        justify-content: center;
+        flex-wrap: nowrap;">
+        <div class="list-group">
+            <a href="index.php" class="list-group-item list-group-item-action ">Dashboard</a>
+            <a href="insert_patient.php" class="list-group-item list-group-item-action ">Add new Patient</a>
+            <a href="update_patient.php" class="list-group-item list-group-item-action active">Edit Patient details</a>
+            <a href="delete_patient.php" class="list-group-item list-group-item-action">Remove Patient details</a>
+            <a href="../../logout.php" class="list-group-item list-group-item-action">Logout</a>
+        </div>
+    </div>
+    <div class="col-md-10" style=" padding: 10px;">
+        <div class="card">
             <div class="card-body">
                 <h1>Update Patient Details</h1>
                     <form action="update_patient.php" method="post">
-                        <div class="form-group">
+                        <div class="form-group" style="padding:10px;">
                             <input type="text" class="form-control" id="Patient_ID" name="Patient_ID" placeholder="Enter Patient ID: ">
                         </div>
+                        <div style="padding:10px;">
                         <input class="form-control" list="datalistOptions" id="choice" name="choice" placeholder="Type to search...">
                         <datalist id="datalistOptions" >
                         <option value="Patient Name">
@@ -84,19 +85,19 @@ if(isset($_POST['update'])){
                         <option value="Contact Number">
                         <option value="Blood Group">
                         </datalist>
-                        <div class="form-group">
+                        </div>  
+                        <div class="form-group" style="padding-left:9px; padding-top:30px;">
                             <label for="Input"></label>
                             <input type="text" class="form-control" id="input" name="input" placeholder="Enter new info: ">
                         </div>
-                            <div style=" padding: 15px; padding-top: 20px; padding-left:0px;">
-                                <button type="submit" name="update" class="btn btn-primary" >Submit</button>
-                            </div>
+                        <div style=" padding: 15px; padding-top: 20px; padding-left:0px;">
+                            <button type="submit" name="update" class="btn btn-primary" >Submit</button>
+                        </div>
                     </form>
+                </div>
             </div>
         </div>
     </div>
-
- </div>
 </div>
 
 

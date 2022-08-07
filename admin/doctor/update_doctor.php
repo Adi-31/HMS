@@ -20,15 +20,15 @@ if (isset($_POST['save'])) {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Update Doctor</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div style="padding: 10px;">
-        <a href="../index.php" class="btn btn-primary" >Back to Admin Dashboard</a>       
-        </div>
+    <div style="padding: 10px;">
+    <a href="../index.php" class="btn btn-primary" >Back to Admin Dashboard</a>       
+    </div>
 </nav>
 <div class="container" style="position: absolute;
         top: 25%;
@@ -39,7 +39,7 @@ if (isset($_POST['save'])) {
         max-width: 2000px;
         max-height: 1500px;
         padding-top: 8rem;">
-        <div class="row">
+        <div class="row" style=" padding-top:300px;">
             <div class="col-md-2">
                 <div class="list-group">
                     <a href="index.php" class="list-group-item list-group-item-action">Dashboard</a>

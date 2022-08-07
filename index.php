@@ -9,67 +9,64 @@
       <title>landingpg</title>
 </head>
 <body style="position: relative;
-width:100%;
-
-">
-<div style="padding:25px;">
-<div style="position: relative;
-width: 100%;
-height: 75px;
-background: #0D6EFD;
-border-radius: 15px;">
-<style>
-    .p {
-    position: absolute;
-   
-    left: 20px;
-    bottom:20px;
-   
-
-    font-family: 'Airbnb Cereal App';
-    font-style: normal;
-    font-size: 40px;
-    line-height: 0px;
-
-    color: #FFFFFF;
-   
-}
- .a {
-    position: absolute;
-width: 150px;
-height: 83px;
-left: 1200px;
-top: 73px;
- }
- .box {
-    box-sizing: border-box;
-    position: absolute;
-    width: 90px;
-    height: 50px;
-    top: 12px;
-    left: 1200px;
-    border: 1px ;
-    border-color: #FFFFFF;
-    border-radius: 15px;
-    font-family: 'Airbnb Cereal App';
-    font-style: normal;
-    font-size: 17px;
-    line-height: 0px;
- }
- .carousel-inner img {
+    width:100%;">
+  <div style="padding:25px;">
+    <div style="position: relative;
     width: 100%;
-    height: 100%;
-  }
-</style>
-<div class="p col-8">
-    <p>HMS</p>
-</div>
-<div class="col-2">
-    <a href="login.php"> -->
-<button class="col-2 box"><h4>Login</h4></button></a>
+    height: 75px;
+    background: #0D6EFD;
+    border-radius: 15px;">
+    <style>
+      .p {
+        position: absolute;
+      
+        left: 20px;
+        bottom:20px;
+      
 
-</div>
-</div>
+        font-family: 'Airbnb Cereal App';
+        font-style: normal;
+        font-size: 40px;
+        line-height: 0px;
+
+        color: #FFFFFF;
+      
+      }
+      .a {
+      position: absolute;
+      width: 150px;
+      height: 83px;
+      left: 1200px;
+      top: 73px;
+      }
+      .box {
+      box-sizing: border-box;
+      position: absolute;
+      width: 90px;
+      height: 50px;
+      top: 12px;
+      left: 1200px;
+      border: 1px ;
+      border-color: #FFFFFF;
+      border-radius: 15px;
+      font-family: 'Airbnb Cereal App';
+      font-style: normal;
+      font-size: 17px;
+      line-height: 0px;
+      }
+      .carousel-inner img {
+      width: 100%;
+      height: 100%;
+      }
+    </style>
+    <div class="p col-8">
+      <p>HMS</p>
+    </div>
+    <div class="col-2">
+      <a href="login.php"> -->
+      <button class="col-2 box"><h4>Login</h4></button></a>
+    </div>
+  </div>
 </div>
 <div >
       <!-- Carousel -->

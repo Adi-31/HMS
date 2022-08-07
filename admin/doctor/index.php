@@ -3,7 +3,7 @@ include('../../db/db.php');
 session_start();
 ?>
 <?php
-$sql="select * from doctor";
+$sql="select * from Doctor";
 $query=mysqli_query($conn,$sql);
 ?>
 <!DOCTYPE html>
@@ -17,22 +17,26 @@ $query=mysqli_query($conn,$sql);
 </head>
 
 <body>
+<!-- 
+// a navbar that contains a button to go to the admin dashboard -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div style="padding: 10px;">
         <a href="../index.php" class="btn btn-primary" >Back to Admin Dashboard</a>       
         </div>
 </nav>
-<div class="container" style="position: absolute;
-        top: 25%;
-        left: 50%;
-        margin-right: -50%;
-        transform: translate(-50%, -50%);
-        padding: 50px;
-        max-width: 2000px;
-        max-height: 1500px;">
-    <div class="row" >
-        <div class="col-md-2">
-            <div class="list-group" >
+
+
+
+<div class="container" style="padding: 50px;
+    display: flex;
+    align-content: center;
+    justify-content: center;">
+    <div class="row">
+        <div class="col-md-2" style="display: flex;
+            align-content: center;
+            justify-content: center;
+            flex-wrap: nowrap;">
+            <div class="list-group">
                 <a href="index.php" class="list-group-item list-group-item-action active">Dashboard</a>
                 <a href="insert_doctor.php" class="list-group-item list-group-item-action">Add new Doctor</a>
                 <a href="update_doctor.php" class="list-group-item list-group-item-action">Edit Doctor details</a>
@@ -40,47 +44,47 @@ $query=mysqli_query($conn,$sql);
                 <a href="../../logout.php" class="list-group-item list-group-item-action">Logout</a>
             </div>
         </div>
-        <div class="col-md-10">
-            <div class="card" style="padding: 10px;">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h1>Doctor Dashboard</h1>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <table class="table table-striped">
-                            <thead>
-                                <tr>
-                                <th scope="col">Doctor ID</th>
-                                <th scope="col">Name</th>
-                                <th scope="col">Contact No</th>
-                                <th scope="col">Specialisation</th>
-                                <th scope="col"></th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                            <?php while($array=mysqli_fetch_row($query)): ?>
-                            <tr>
-                                <th scope="row"><?php echo $array[0];?></th>
-                                <td><?php echo $array[1];?></td>
-                                <td><?php echo $array[2];?></td>
-                                <td><?php echo $array[3];?></td>
-                            </tr>
-                            <?php endwhile; ?>
-                            </tbody>
-                            </table>
-                        </div>
-                    </div>
+        <div class="col-md-10" style="display: flex;
+        align-content: center;
+        justify-content: center;
+        flex-wrap: nowrap;">
+        <div class="card" style="padding: 10px;"> 
+          <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>Doctor Dashboard</h1>
                 </div>
             </div>
-        </div>
+              <div class="row">
+                <div class="col-md-12">
+                    <table class="table table-striped">
+                    <thead>
+                        <tr>
+                          <th scope="col">Doctor ID</th>
+                          <th scope="col">Name</th>
+                          <th scope="col">Contact No</th>
+                          <th scope="col">Specialisation </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <?php while($array=mysqli_fetch_row($query)): ?>
+                      <tr>
+                          <th scope="row"><?php echo $array[0];?></th>
+                          <td><?php echo $array[1];?></td>
+                          <td><?php echo $array[2];?></td>
+                          <td><?php echo $array[3];?></td>
+                      </tr>
+                      <?php endwhile; ?>
+                    </tbody>
+                    </table>
+                </div>
+              </div>
+          </div>
+
     </div>
 </div>
 </div>
-
-
+</div>
 
 
 

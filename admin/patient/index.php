@@ -32,10 +32,10 @@ $query=mysqli_query($conn,$sql);
     align-content: center;
     justify-content: center;">
     <div class="row">
-        <div class="col-md-2" style="    display: flex;
-    align-content: center;
-    justify-content: center;
-    flex-wrap: nowrap;">
+        <div class="col-md-2" style="display: flex;
+            align-content: center;
+            justify-content: center;
+            flex-wrap: nowrap;">
             <div class="list-group">
                 <a href="index.php" class="list-group-item list-group-item-action active">Dashboard</a>
                 <a href="insert_patient.php" class="list-group-item list-group-item-action">Add new Patient</a>
@@ -44,10 +44,10 @@ $query=mysqli_query($conn,$sql);
                 <a href="../../logout.php" class="list-group-item list-group-item-action">Logout</a>
             </div>
         </div>
-        <div class="col-md-10" style="    display: flex;
-    align-content: center;
-    justify-content: center;
-    flex-wrap: nowrap;">
+        <div class="col-md-10" style="display: flex;
+        align-content: center;
+        justify-content: center;
+        flex-wrap: nowrap;">
         <div class="card" style="padding: 10px;"> 
           <div class="container-fluid">
             <div class="row">
